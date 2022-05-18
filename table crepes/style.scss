@@ -1,0 +1,108 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    width:1170px;
+    margin:auto;
+}
+
+.collapsible-table{
+    border-collapse:collapse;
+    width:100%;
+    border:1px solid lightgray;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition:all ease-in-out .3s;
+    &:hover{
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        transform:scale(1.01);
+    }
+    .base-row{
+        td{
+            height:100%;
+            border-bottom:1px solid lightgray;
+        }
+        td:not(:last-child){
+            padding:15px 15px;
+        }
+       
+    }
+    .baserow.open{
+        td{
+            border-bottom:none;
+        }
+    }
+    .details-row{        
+        td{
+            display:none;
+        }
+        .details{
+            display:none;
+            padding:15px 15px 15px 15px;
+            background-color:lighten(lightgray, 15%);
+        }
+    }
+}
+
+
+.icon{
+    display:flex;
+    align-content:space-around;
+    justify-content:space-around;
+    flex-direction:column;
+    padding:5px;
+    cursor:pointer;
+    margin:auto;
+    .bars{
+        margin:auto;
+        height:30px;
+        width:30px;
+    }
+}
+
+.fold-icon{
+    .bars{
+        .bar{
+            transition:all ease-in-out .3s;
+            width:100%;
+            min-height:2px;
+            border-radius:1px;
+            &:first-child{
+                margin-top:14px;
+            }
+            &:last-child{
+                margin-top:-2px;
+            }
+        }
+    }
+}
+.fold-icon.open{
+    .bars{
+        .bar{
+            &:first-child{
+                transform:rotate(180deg);                
+            }
+            &:last-child{
+                transform:rotate(-180deg);
+            }
+        }
+    }
+}
+
+.sortable-table{
+    width:100%;
+}
+
+.drag-handler {
+    width: 1.4em;
+    position: relative;
+    background-size: 10px 20px;
+    cursor: move;
+}
+
+.drag-handler:active {
+    background-image: linear-gradient(45deg, #c9c8c3, #d4d4d1 2px, #fff 2px, #fff 4px, #cecec8 4px, #c7c7c2 9px, #fff 9px, #fff 11px, #afafaa 11px, #c2c2bd 16px, #fff 16px, #fff 18px, #b1b1ab 18px, #b8b7b0 22px);
+    background-size: 10px 20px;
+}

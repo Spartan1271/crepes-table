@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table drag and drop accordion</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!--google icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="container">
+     
+        <table class="sortable-table">
+            <tbody>
+                <tr>
+                    <td>
+                        <table class="collapsible-table">
+
+                            <tbody>
+                                <tr class="base-row">
+                                    <td class="drag-handler"><span class="material-symbols-outlined">
+                                        drag_indicator
+                                        </span></td>
+                                    <td>Vendor 1</td>
+                                    <td>3</td>
+                                    <td>1,00,000 - 7,00,000</td>
+                                    <td><span class="material-symbols-outlined">
+                                        done
+                                        </span></td>
+                                    <td>
+                                        <div class="icon fold-icon">
+                                            <div class="bars">
+                                                <span class="material-symbols-outlined bar">
+                                                    expand_more
+                                                    </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="details-row">
+                                    <td colspan="5">
+                                        <div class="details">Test</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="collapsible-table">
+                            <tbody>
+                                <tr class="base-row">
+                                    <td class="drag-handler"><span class="material-symbols-outlined">
+                                        drag_indicator
+                                        </span></td>
+                                    <td>Vendor 2</td>
+                                    <td>3</td>
+                                    <td>1,00,000 - 7,00,000</td>
+                                    <td><span class="material-symbols-outlined">
+                                        done
+                                        </span></td>
+                                    <td>
+                                        <div class="icon fold-icon">
+                                            <div class="bars">
+                                                <span class="material-symbols-outlined bar">
+                                                    expand_more
+                                                    </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="details-row">
+                                    <td colspan="5">
+                                        <div class="details">Test</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="collapsible-table">
+                            <tbody>
+                                <tr class="base-row">
+                                    <td class="drag-handler"><span class="material-symbols-outlined">
+                                        drag_indicator
+                                        </span></td>
+                                    <td>Vendor 3</td>
+                                    <td>3</td>
+                                    <td>1,00,000 - 7,00,000</td>
+                                    <td><span class="material-symbols-outlined">
+                                        done
+                                        </span></td>
+                                    <td>
+                                        <div class="icon fold-icon">
+                                            <div class="bars">
+                                                <span class="material-symbols-outlined bar">
+                                                    expand_more
+                                                    </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="details-row">
+                                    <td colspan="5">
+                                        <div class="details">Test</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="collapsible-table">
+                            <tbody>
+                                <tr class="base-row">
+                                    <td class="drag-handler"><span class="material-symbols-outlined">
+                                        drag_indicator
+                                        </span></td>
+                                    <td>Vendor 4</td>
+                                    <td>3</td>
+                                    <td>1,00,000 - 7,00,000</td>
+                                    <td><span class="material-symbols-outlined">
+                                        done
+                                        </span></td>
+                                    <td>
+                                        <div class="icon fold-icon">
+                                            <div class="bars">
+                                                <span class="material-symbols-outlined bar">
+                                                    expand_more
+                                                    </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="details-row">
+                                    <td colspan="5">
+                                        <div class="details">Test</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./drag.js"></script>
+</body>
+</html>
